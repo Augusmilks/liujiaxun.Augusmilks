@@ -1,7 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shang hai</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/star.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Shang Hai</h1>
+    </header>
+    <nav>
+        <div class="nav">
+            <div class="content">
+                <p>
+                    <strong>上海</strong>（Shanghai），简称“沪”或“申”，是中华人民共和国省级行政区、直辖市、国家中心城市、超大城市，中国国际经济、金融、贸易、航运、科技创新中心，国家物流枢纽。全市下辖16个区，总面积6340.5平方千米。
+                    上海位于长江三角洲地区，地处中国东部、长江入海口、东临东中国海，北、西与江苏、浙江两省相接，界于东经120°52′-122°12′，北纬30°40′-31°53′之间
+                    
+                </p>
+                <p>
+                    <strong>상해</strong> (Shanghai)는 략칭이"호"또는"신"이여서 중화인민공화국의 성급 행정구, 직할시, 국가중심도시, 초도시이여서 중국의 국제 경제, 금융, 무역, 해운, 과학기술혁신센터, 국가물류의 중추입니다.전 시산하에개 구를 두었는데 총면적이 6,340.5 평방킬로메터였다.
+    
+                    상해는 장강삼각주 지역에 위치하여있으며 중국 동부, 양쯔강이 바다로 흘러드는 입구, 동쪽으로 동중국해와 잇닿아있으며 북, 서, 강소성, 절강과 잇닿아있으며 동경 120~52′-122~12′, 북위 30~40′-31~53′ 사이에 있다.
+                    
+                </p>
+            </div>
+            
+            <div class="video">
+                <video src="./video/Shanghai.mp4" controls autoplay></video>
+            </div>
+            <div class="place">
+                <!-- <img src="./images/place.jpg" alt=""> -->
+                <img   class="yun" id="yun1" src="./images/yun1.png" alt="">
+                <img   class="yun" id="yun2" src="./images/yun2.png" alt="">
+                <img   class="yun" id="yun3" src="./images/yun3.png" alt="">
+                
+                <img id="lianjie-l" src="./images/lianjie-l.png" alt="">
+                <img id="lianjie-r" src="./images/lianjie-r.png" alt="">
+                <img  class="animat" id="shanghaiTitle" src="./images/shanghai title.png" alt="">
+                <img id="sightSpot" src="./images/sight spot.png" alt="">
+                <img  id="building" src="./images/上海中心大厦.png" alt="">
+                <img id="temple" src="./images/静安寺.png" alt="">
+                <img id="pearl" src="./images/东方明珠.png" alt="">
+            </div>
+        </div>
+       
+    </nav>
+   
+    <script>
+        $(function(){
+            $("#building").click(function () {
+                location.href="building.html"
+            })
+            $("#temple").click(function () {
+                location.href="temple.html"
+            })
+            $("#pearl").click(function () {
+                location.href="pearl.html"
+            })
+           
+            $("#yun1").offset({left:random_One()})
+            $("#yun2").offset({left:random_One()})
+            $("#yun3").offset({left:random_One()})
+        })
+       
+    </script>
+
 </body>
 </html>
